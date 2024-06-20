@@ -5,44 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index.css" />
     <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header>
+      <div class="navbar">
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Studies</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </header>
 
-    <div class="page">
-      <img src="../media/image3.jpg"/>
-      
-      
-      <header>
-
-        <div class="navbar">
-
-          <ul class="menu">
-            <li> <a href="#">Home</a></li>
-            <li> <a href="#">About</a></li>
-            <li> <a href="#">Studies</a></li>
-            <li> <a href="#">Projects</a></li>
-            <li> <a href="#">Skills</a></li>
-            <li> <a href="#">Experience</a></li>
-            <li> <a href="#">Contact</a></li>
-          </ul>
-
-    
-
-        </div>
-      </header>
-
-        <div class="brand">
-          <h2>MT</h2>
-        </div>
-
-        <div class="name">
-          <h1>Manuel Trujillo</h1>
-        </div>
+    <main>
+      <section id="landingSection">
+        <h1 id="name">Manuel Trujillo</h1>
+        <h2 id="description">Web Developer | Industrial Engineer</h2>
         <div class="myClass">
-          <a id="link" href="#"> <i class="fa-brands fa-linkedin"> </i> </a>
+          <a id="link" href="#"> <i class="fa-brands fa-google"></i></a>
+          <a
+            id="link"
+            href="https://www.linkedin.com/in/jos%C3%A9-manuel-trujillo-botello-9a44121a9/"
+          >
+            <i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a id="link" href="https://github.com/ManuelTB1">
+            <i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+      </section>
+
+      <section id="about">
+        <img class="profile" src="media/image4.jpg" />
+
+        <div id="me">
+          <h1>About me</h1>
+          <p>Hello!</p>
+          <p>Is an honor to me that you are visiting my Portfolio, enjoy!.</p>
+          <p>
+            Manuel Trujillo is an Industrial Engineer and Web Developer student
+            from Morelos, Mexico.
+          </p>
+        </div>
+      </section>
+
+      <section id="studies">
+        <h1 class="std">Studies</h1>
+        <!--AGREGAR CLASS AL H1 -->
+
+        <div id="school">
+          <img class="edu1" src="media/image5.png" />
+          <p>
+            Universidad Politécnica del Estado de Morelos <br />
+            2017 - 2020 <br />
+            Industrial Engineering
+          </p>
+          <img class="edu2" src="media/image6.png" />
+          <p>CICCC</p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div id="pro">
+          <h1>Projects</h1>
         </div>
 
+        <div id="skill">
+          <h1>Skills</h1>
+        </div>
 
-    </div>
+        <div id="showproject">
+          <img class="firstpro" src="media/image8.png" />
+        </div>
+
+        <div id="showskills">
+          <a id="sk"> <i class="fa-solid fa-people-group"> </i> </a>
+          <a id="sk"> <i class="fa-solid fa-comments"></i> </a>
+          <a id="sk"> <i class="fa-solid fa-gears"></i> </a>
+          <a id="sk"> <i class="fa-brands fa-css3-alt"></i> </a>
+          <a id="sk"> <i class="fa-brands fa-html5"></i> </a>
+        </div>
+      </section>
+
+      <section id="experience">
+
+        <div class="firstxp">
+          <h1>Production Supervisor</h1>
+
+
+        </div>
+
+        <div class="secondxp">
+          
+
+        </div>
+
+      </section>
+
+
+
+
+
+    </main>
   </body>
 </html>
