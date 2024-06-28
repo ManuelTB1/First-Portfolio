@@ -364,14 +364,19 @@ h1 {
     grid-template-rows: 0.4fr 2fr;
     grid-template-columns: 1fr 1fr;
     background-color: #d2d2d2;
-    min-height: 70vh;
+    min-height: 75vh;
     padding-top: 50px;
+
+    h1 {
+        font-size: 20pt;
+    }
 
 }
 
 .desc {
     margin-top: 20px;
     text-align: center;
+    font-size: 13pt;
 }
 
 .firstpro {
@@ -385,7 +390,15 @@ h1 {
     border: 10px solid black;
     padding: 20px;
  
+}
 
+
+.goto {
+    font-size: 40px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: black;
 
 }
 
@@ -406,7 +419,7 @@ h1 {
 
 
 #showskills {
-    font-size: 50px;
+    font-size: 55px;
     text-align: center;
     display:flex;
     align-items: center;
@@ -430,20 +443,13 @@ h1 {
     
 
     p {
-        font-size: 10pt;
+        font-size: 12pt;
     }
 
     
 }
 
-.goto {
-    font-size: 30px;
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    color: black;
 
-}
 
 
 //-------------- RESPONSIVE FOR MOBILE --------------//
