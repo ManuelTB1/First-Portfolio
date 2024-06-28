@@ -34,13 +34,14 @@ section {
   text-decoration: none;
   color: white;
   font-style: bold;
+  font-size: 13pt;
 }
 
 .menu a:hover {
   color: #d2d2d2;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   .navbar {
     display: none;
   }
@@ -62,7 +63,7 @@ section {
 }
 
 #name {
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   font-size: 60pt;
   align-content: center;
   justify-content: center;
@@ -71,6 +72,7 @@ section {
 
 #description {
   padding-bottom: 20px;
+  font-size: 20pt;
 }
 
 #link {
@@ -84,7 +86,10 @@ section {
   color: #d2d2d2;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  #landingSection {
+    min-height: 120vw;
+  }
   #name {
     font-size: 35px;
   }
@@ -110,10 +115,12 @@ section {
 
 #me p {
   margin-bottom: 10px;
+  font-size: 13pt;
 }
 
 h1 {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  font-size: 20pt;
 }
 
 .profile {
@@ -127,12 +134,11 @@ h1 {
   padding: 25px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   #about {
     display: flex;
     grid-template-columns: none;
     flex-direction: column;
-    min-height: 100vh;
     border: 1px solid black;
   }
   .profile {
@@ -140,10 +146,11 @@ h1 {
     margin-top: 30px;
     align-items: center;
     justify-content: center;
-    width: 45vh;
-    height: 60vh;
+    width: 25vh;
+    height: 35vh;
     border: 5px solid #d2d2d2;
     padding: 10px;
+    margin-bottom: 20px;
   }
   #me p {
     margin: auto;
@@ -160,10 +167,11 @@ h1 {
     margin: auto;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
   }
 }
 #studies {
-  min-height: 60vh;
+  min-height: 70vh;
   background-image: url("../media/image2.jpg");
   background-size: cover;
 }
@@ -203,7 +211,10 @@ h1 {
   align-content: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  #studies {
+    min-height: 50vh;
+  }
   .std {
     color: white;
     padding-top: none;
@@ -274,11 +285,25 @@ h1 {
 }
 
 #showskills {
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+#showskills .firstrow, #showskills .secondrow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+#showskills .firstrow .cell, #showskills .secondrow .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
 }
 #showskills p {
   font-size: 10pt;
@@ -292,7 +317,7 @@ h1 {
   color: black;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   #projects {
     grid-template-rows: none;
     grid-template-columns: none;
@@ -315,18 +340,36 @@ h1 {
     font-size: 40px;
     text-align: center;
     display: flex;
-    flex-direction: row;
+    order: 1;
+    flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
   }
   #showskills p {
     font-size: 10pt;
   }
+  #showskills .firstrow, #showskills .secondrow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  #showskills .firstrow .cell, #showskills .secondrow .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+  }
   #skill {
     display: flex;
+    order: 1;
     align-content: center;
     margin: auto;
     align-self: flex-end;
+  }
+  .goto {
+    margin-bottom: 50px;
   }
 }
 #experience {
@@ -405,7 +448,7 @@ h1 {
   width: 400px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   .firstxp {
     position: sticky;
     top: 50px;
@@ -473,6 +516,9 @@ h1 {
   .secondxp .columnone p {
     text-align: center;
   }
+  .secondxp .columnone .positioncero {
+    text-align: center;
+  }
   .secondxp .columntwo {
     grid: none;
     align-content: center;
@@ -533,7 +579,7 @@ h1 {
   color: #d2d2d2;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 600px) {
   #cont {
     font-size: 35pt;
     align-content: center;

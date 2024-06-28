@@ -42,6 +42,7 @@ section {
     text-decoration: none;
     color: white;
     font-style: bold;
+    font-size: 13pt;
 }
 
 .menu a:hover {
@@ -52,7 +53,7 @@ section {
 
 //-------------- RESPONSIVE FOR MOBILE --------------//
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 320px) and (max-width: 600px){
 
     .navbar {
         display: none;
@@ -81,7 +82,7 @@ section {
 }
 
 #name {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
     font-size: 60pt;
     align-content: center;
     justify-content: center;
@@ -91,6 +92,7 @@ section {
 
 #description {
     padding-bottom: 20px;
+    font-size: 20pt;
 }
 
 #link {
@@ -108,7 +110,12 @@ section {
 
 //-------------- RESPONSIVE FOR MOBILE --------------//
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 320px) and (max-width: 600px){
+
+    #landingSection {
+        min-height: 120vw;
+       
+    }
 
 
     #name {
@@ -152,10 +159,14 @@ section {
 
 #me p {
     margin-bottom: 10px;
+    font-size: 13pt;
+
 }
 
 h1 {
-    margin-bottom: 15px;
+    margin-bottom:30px;
+    font-size: 20pt;
+   
 }
 
 .profile {
@@ -171,13 +182,12 @@ h1 {
 
 //-------------- RESPONSIVE FOR MOBILE --------------//
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 320px) and (max-width: 600px){
 
     #about {
         display: flex;
         grid-template-columns: none;
         flex-direction: column;
-        min-height: 100vh;
         border: 1px solid black;  
 
 }
@@ -187,10 +197,11 @@ h1 {
         margin-top: 30px;
         align-items: center;
         justify-content: center;
-        width: 45vh;
-        height: 60vh;
+        width: 25vh;
+        height: 35vh;
         border: 5px solid #d2d2d2;
         padding: 10px;
+        margin-bottom: 20px;
 
     } 
 
@@ -214,6 +225,8 @@ h1 {
         margin: auto;
         justify-content: center;
         align-items: center;
+        margin-top: 20px;
+        
 
     }   
 
@@ -230,7 +243,7 @@ h1 {
 //--------------------- EDUCATION ----------------//
 
 #studies {
-    min-height: 60vh;
+    min-height: 70vh;
     background-image: url('../media/image2.jpg');
     background-size: cover;
 }
@@ -280,7 +293,11 @@ h1 {
 
 //-------------- RESPONSIVE FOR MOBILE --------------//
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 320px) and (max-width: 600px){
+
+    #studies {
+        min-height: 50vh;
+    }
 
     .std {
         color: white;
@@ -386,12 +403,27 @@ h1 {
 
 
 #showskills {
-    font-size: 40px;
+    font-size: 50px;
     text-align: center;
-    display:grid;
-
+    display:flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+
+    .firstrow, .secondrow {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+
+        .cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px
+        }
+    }
     
 
     p {
@@ -413,7 +445,7 @@ h1 {
 
 //-------------- RESPONSIVE FOR MOBILE --------------//
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 320px) and (max-width: 600px){
 
     #projects {
 
@@ -444,7 +476,8 @@ h1 {
         font-size: 40px;
         text-align: center;
         display:flex;
-        flex-direction: row;
+        order: 1;
+        flex-direction: column;
 
         align-items: center;
         justify-content: space-evenly;
@@ -453,18 +486,40 @@ h1 {
         p {
             font-size: 10pt;
         }
+
+        .firstrow, .secondrow {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row;
+    
+            .cell {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                margin: 20px
+            }
+        }
+
+
     
         
-    }
+        }
 
     #skill {
         display: flex;
+        order: 1;
         align-content: center;
         margin: auto;
         align-self:flex-end;
     
         
     
+    }
+
+    .goto {
+        margin-bottom: 50px;
     }
 
 
@@ -588,7 +643,7 @@ h1 {
 
 //-------------- RESPONSIVE FOR MOBILE --------------//
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 320px) and (max-width: 600px){
 
     .firstxp {
         position: sticky;
@@ -678,9 +733,13 @@ h1 {
     
             }
     
-            p{
+            p {
                 text-align: center;
     
+            }
+
+            .positioncero {
+                text-align: center;
             }
     
         }
@@ -772,7 +831,7 @@ h1 {
 
 //-------------- RESPONSIVE FOR MOBILE --------------//
 
-@media only screen and (max-width: 600px){
+@media only screen and (min-width: 320px) and (max-width: 600px){
 
     #cont {
 
@@ -816,8 +875,6 @@ h1 {
         margin: 20px;
     
     }
-
-
 
 
 
