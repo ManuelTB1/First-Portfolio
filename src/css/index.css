@@ -141,27 +141,30 @@ h1 {
     grid-template-columns: none;
     flex-direction: column;
     border: 1px solid black;
+    min-height: 70vh;
   }
   .profile {
     margin: auto;
     margin-top: 30px;
     align-items: center;
     justify-content: center;
-    width: 25vh;
-    height: 35vh;
+    width: 30vh;
+    height: 40vh;
     border: 5px solid #d2d2d2;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   #me p {
     margin: auto;
-    font-size: 15px;
+    font-size: 10pt;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
   #me h1 {
     text-align: center;
+    font-size: 15pt;
+    margin-bottom: 20px;
   }
   #me {
     grid-area: none;
