@@ -761,15 +761,26 @@ h1 {
             align-content: center;
             margin: auto;
             margin-top: 50px;
+
+            .position {
+                font-size: 15pt;
+            }
     
             .time {
-                font-size: 15px;
+                font-size: 9pt;
                 text-align: center;
                 margin-bottom: 15px;
             }
+
+            .principalline {
+                font-size: 11pt;
+
+            }
     
-            p{
+            ul {
                 text-align: center;
+                font-size: 8.5pt;
+                list-style-position:inside;
     
             }
         }
@@ -795,28 +806,36 @@ h1 {
     
         .columnone {
             grid: none;
-    
             align-content: center;
             margin: auto;
             margin-bottom: 50px;
             margin-top: 50px;
-    
+
+            .positioncero {
+                text-align: center;
+                font-size: 15pt;
+            }
+
             .time {
     
-                font-size: 15px;
+                font-size: 9pt;
                 text-align: center;
                 margin-bottom: 15px;
     
             }
+
+            .principalline {
+                font-size: 11pt;
+
+            }
     
-            p {
+            ul {
                 text-align: center;
+                font-size: 8.5pt;
     
             }
 
-            .positioncero {
-                text-align: center;
-            }
+
     
         }
     

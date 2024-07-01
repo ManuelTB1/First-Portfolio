@@ -543,13 +543,21 @@ h1 {
     margin: auto;
     margin-top: 50px;
   }
+  .firstxp .secondColumn .position {
+    font-size: 15pt;
+  }
   .firstxp .secondColumn .time {
-    font-size: 15px;
+    font-size: 9pt;
     text-align: center;
     margin-bottom: 15px;
   }
-  .firstxp .secondColumn p {
+  .firstxp .secondColumn .principalline {
+    font-size: 11pt;
+  }
+  .firstxp .secondColumn ul {
     text-align: center;
+    font-size: 8.5pt;
+    list-style-position: inside;
   }
   .secondxp {
     position: sticky;
@@ -571,16 +579,21 @@ h1 {
     margin-bottom: 50px;
     margin-top: 50px;
   }
+  .secondxp .columnone .positioncero {
+    text-align: center;
+    font-size: 15pt;
+  }
   .secondxp .columnone .time {
-    font-size: 15px;
+    font-size: 9pt;
     text-align: center;
     margin-bottom: 15px;
   }
-  .secondxp .columnone p {
-    text-align: center;
+  .secondxp .columnone .principalline {
+    font-size: 11pt;
   }
-  .secondxp .columnone .positioncero {
+  .secondxp .columnone ul {
     text-align: center;
+    font-size: 8.5pt;
   }
   .secondxp .columntwo {
     grid: none;
