@@ -1,3 +1,693 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "comfortaa", sans-serif;
+}
 
+section {
+  background-color: white;
+  min-height: 100vh;
+}
+
+.navbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: black;
+}
+
+.menu {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  color: black;
+}
+
+.menu li {
+  list-style: none;
+  color: black;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-style: bold;
+  font-size: 13pt;
+}
+
+.menu a:hover {
+  color: #d2d2d2;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+}
+#landingSection {
+  max-width: 100vw;
+  min-height: 52vw;
+  background-image: url("../media/image7.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#name {
+  padding-bottom: 15px;
+  font-size: 60pt;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#description {
+  padding-bottom: 20px;
+  font-size: 20pt;
+}
+
+#link {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+
+#link:hover {
+  color: #d2d2d2;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  #landingSection {
+    min-height: 120vw;
+  }
+  #name {
+    font-size: 30pt;
+    margin-bottom: 10px;
+  }
+  #description {
+    font-size: 10pt;
+  }
+  #link {
+    font-size: 25px;
+  }
+}
+#about {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: ". text";
+  border: 1px solid black;
+  min-height: 70vh;
+}
+
+#me {
+  grid-area: text;
+  align-content: center;
+}
+
+#me p {
+  margin-bottom: 15px;
+  font-size: 13pt;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 20pt;
+}
+
+.profile {
+  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 400px;
+  border: 10px solid #d2d2d2;
+  padding: 25px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  #about {
+    display: flex;
+    grid-template-columns: none;
+    flex-direction: column;
+    border: 1px solid black;
+    min-height: 70vh;
+  }
+  .profile {
+    margin: auto;
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 30vh;
+    height: 40vh;
+    border: 5px solid #d2d2d2;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  #me p {
+    margin: auto;
+    font-size: 10pt;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #me h1 {
+    text-align: center;
+    font-size: 15pt;
+    margin-bottom: 20px;
+  }
+  #me {
+    grid-area: none;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+}
+#studies {
+  min-height: 70vh;
+  background-image: url("../media/image2.jpg");
+  background-size: cover;
+}
+
+#school {
+  display: grid;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-columns: 1fr 2fr;
+}
+
+.std {
+  color: white;
+  padding-top: 30px;
+  padding-left: 100px;
+  font-size: 20pt;
+  margin-bottom: 50px;
+}
+
+.edu1 {
+  width: 130px;
+  height: 160px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.edu2 {
+  width: 140px;
+  height: 150px;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#school p {
+  color: white;
+  align-content: center;
+  font-size: 13pt;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  #studies {
+    min-height: 50vh;
+  }
+  .std {
+    color: white;
+    padding-top: none;
+    padding-left: none;
+    font-size: 15pt;
+  }
+  #studies h1 {
+    margin: auto;
+    padding-left: 0px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  #school {
+    display: flex;
+    grid-template-rows: none;
+    grid-template-columns: none;
+    flex-direction: column;
+  }
+  #school p {
+    font-size: 10pt;
+    padding-bottom: 40px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .edu1 {
+    width: 60px;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  .edu2 {
+    width: 60px;
+    height: 60px;
+  }
+}
+#projects {
+  display: grid;
+  grid-template-rows: 0.4fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  background-color: #d2d2d2;
+  min-height: 75vh;
+  padding-top: 50px;
+}
+#projects h1 {
+  font-size: 20pt;
+}
+
+.desc {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 13pt;
+}
+
+.firstpro {
+  margin: auto;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 300px;
+  border: 10px solid black;
+  padding: 20px;
+}
+
+.goto {
+  font-size: 40px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+#pro {
+  align-content: center;
+  margin: auto;
+}
+
+#skill {
+  align-content: center;
+  margin: auto;
+}
+
+#showskills {
+  font-size: 55px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#showskills .firstrow, #showskills .secondrow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+#showskills .firstrow .cell, #showskills .secondrow .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+#showskills p {
+  font-size: 12pt;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  #projects {
+    grid-template-rows: none;
+    grid-template-columns: none;
+    background-color: #d2d2d2;
+    min-height: 70vh;
+    padding-top: 50px;
+  }
+  #pro h1 {
+    font-size: 15pt;
+  }
+  .firstpro {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 230px;
+    border: 5px solid black;
+    padding: 15px;
+  }
+  .desc {
+    font-size: 10pt;
+  }
+  .goto {
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  #skill {
+    display: flex;
+    order: 1;
+    align-content: center;
+    margin: auto;
+    align-self: flex-end;
+  }
+  #skill h1 {
+    font-size: 15pt;
+    margin-bottom: 30px;
+  }
+  #showskills {
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    order: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #showskills p {
+    font-size: 10pt;
+  }
+  #showskills .firstrow, #showskills .secondrow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+  }
+  #showskills .firstrow .cell, #showskills .secondrow .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+  }
+}
+#experience {
+  min-height: 80vh;
+  color: white;
+  margin-top: 50px;
+}
+
+.firstxp {
+  position: sticky;
+  top: 50px;
+  left: 50px;
+  height: 700px;
+  width: 90vw;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 30px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "firstcol secondcol";
+}
+.firstxp .column {
+  grid: firstcol;
+  align-content: center;
+  margin: auto;
+}
+.firstxp .column .gru {
+  width: 400px;
+}
+.firstxp .secondColumn {
+  grid: secondcol;
+  align-content: center;
+  margin: auto;
+}
+.firstxp .secondColumn .position {
+  font-size: 23pt;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.firstxp .secondColumn .time {
+  font-size: 12pt;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.firstxp .secondColumn ul {
+  text-align: center;
+  font-size: 12pt;
+}
+.firstxp .secondColumn li {
+  margin-bottom: 15px;
+}
+.firstxp .secondColumn .principalline {
+  margin-bottom: 30px;
+  font-size: 15pt;
+}
+.firstxp .secondColumn p {
+  text-align: center;
+  font-size: 13pt;
+}
+
+.secondxp {
+  position: sticky;
+  height: 700px;
+  width: 90vw;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 30px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "columnuno columndos";
+}
+.secondxp .columnone {
+  grid: columnuno;
+  align-content: center;
+  margin: auto;
+}
+.secondxp .columnone .positioncero {
+  font-size: 23pt;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.secondxp .columnone .principalline {
+  margin-bottom: 30px;
+  font-size: 15pt;
+}
+.secondxp .columnone .time {
+  font-size: 12pt;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.secondxp .columnone p {
+  text-align: center;
+  font-size: 13pt;
+}
+.secondxp .columnone ul {
+  text-align: center;
+  list-style-position: inside;
+  font-size: 12pt;
+}
+.secondxp .columnone li {
+  margin-bottom: 15px;
+}
+.secondxp .columnone .principalline {
+  margin-bottom: 30px;
+  font-size: 15pt;
+}
+.secondxp .columntwo {
+  grid: columndos;
+  align-content: center;
+  margin: auto;
+}
+.secondxp .columntwo .gru {
+  width: 400px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .firstxp {
+    position: sticky;
+    top: 50px;
+    left: 0px;
+    height: 700px;
+    width: 85vw;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    grid-template-areas: none;
+  }
+  .firstxp .column {
+    grid: none;
+    align-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .firstxp .column .gru {
+    width: 250px;
+  }
+  .firstxp .secondColumn {
+    grid: none;
+    align-content: center;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .firstxp .secondColumn .position {
+    font-size: 15pt;
+  }
+  .firstxp .secondColumn .time {
+    font-size: 9pt;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .firstxp .secondColumn .principalline {
+    font-size: 11pt;
+  }
+  .firstxp .secondColumn ul {
+    text-align: center;
+    font-size: 8.5pt;
+    list-style-position: inside;
+  }
+  .secondxp {
+    position: sticky;
+    height: 700px;
+    width: 85vw;
+    border: 1px solid black;
+    background-color: black;
+    border-radius: 30px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: none;
+    grid-template-areas: none;
+  }
+  .secondxp .columnone {
+    grid: none;
+    align-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .secondxp .columnone .positioncero {
+    text-align: center;
+    font-size: 15pt;
+  }
+  .secondxp .columnone .time {
+    font-size: 9pt;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .secondxp .columnone .principalline {
+    font-size: 11pt;
+  }
+  .secondxp .columnone ul {
+    text-align: center;
+    font-size: 8.5pt;
+  }
+  .secondxp .columntwo {
+    grid: none;
+    align-content: center;
+    margin: auto;
+    margin-top: 50px;
+  }
+  .secondxp .columntwo .gru {
+    width: 250px;
+  }
+}
+#contact {
+  min-height: 100vh;
+  background-image: url("../media/image15.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+}
+
+#cont {
+  font-size: 60pt;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ll {
+  padding-bottom: 50px;
+}
+
+.fl .sl .ll {
+  font-size: 12pt;
+}
+
+#icon {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+  margin: 20px;
+}
+
+#icon:hover {
+  color: #d2d2d2;
+}
+
+.classcont {
+  padding-bottom: 50px;
+}
+
+#ret {
+  font-size: 40px;
+  color: white;
+}
+
+#ret:hover {
+  color: #d2d2d2;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  #cont {
+    font-size: 30pt;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .fl {
+    font-size: 9.5pt;
+  }
+  .sl {
+    font-size: 9.5pt;
+  }
+  .ll {
+    font-size: 9.5pt;
+  }
+  #icon {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 20px;
+  }
+  .classcont {
+    padding-bottom: 70px;
+  }
+  #ret {
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 20px;
+  }
+}
 
 /*# sourceMappingURL=index.css.map */
