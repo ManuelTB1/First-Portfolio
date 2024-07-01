@@ -91,13 +91,14 @@ section {
     min-height: 120vw;
   }
   #name {
-    font-size: 35px;
+    font-size: 30pt;
+    margin-bottom: 10px;
   }
   #description {
-    font-size: 15px;
+    font-size: 10pt;
   }
   #link {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 #about {
@@ -140,27 +141,30 @@ h1 {
     grid-template-columns: none;
     flex-direction: column;
     border: 1px solid black;
+    min-height: 70vh;
   }
   .profile {
     margin: auto;
     margin-top: 30px;
     align-items: center;
     justify-content: center;
-    width: 25vh;
-    height: 35vh;
+    width: 30vh;
+    height: 40vh;
     border: 5px solid #d2d2d2;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   #me p {
     margin: auto;
-    font-size: 15px;
+    font-size: 10pt;
     justify-content: center;
     align-items: center;
     text-align: center;
   }
   #me h1 {
     text-align: center;
+    font-size: 15pt;
+    margin-bottom: 20px;
   }
   #me {
     grid-area: none;
@@ -222,6 +226,7 @@ h1 {
     color: white;
     padding-top: none;
     padding-left: none;
+    font-size: 15pt;
   }
   #studies h1 {
     margin: auto;
@@ -236,7 +241,7 @@ h1 {
     flex-direction: column;
   }
   #school p {
-    font-size: 15px;
+    font-size: 10pt;
     padding-bottom: 40px;
     margin: auto;
     align-items: center;
@@ -244,12 +249,13 @@ h1 {
     text-align: center;
   }
   .edu1 {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 70px;
+    margin-bottom: 20px;
   }
   .edu2 {
     width: 60px;
-    height: 70px;
+    height: 60px;
   }
 }
 #projects {
@@ -332,6 +338,9 @@ h1 {
     min-height: 70vh;
     padding-top: 50px;
   }
+  #pro h1 {
+    font-size: 15pt;
+  }
   .firstpro {
     margin: auto;
     display: flex;
@@ -339,12 +348,30 @@ h1 {
     align-items: center;
     justify-content: center;
     width: 350px;
-    height: 250px;
+    height: 230px;
     border: 5px solid black;
     padding: 15px;
   }
+  .desc {
+    font-size: 10pt;
+  }
+  .goto {
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  #skill {
+    display: flex;
+    order: 1;
+    align-content: center;
+    margin: auto;
+    align-self: flex-end;
+  }
+  #skill h1 {
+    font-size: 15pt;
+    margin-bottom: 30px;
+  }
   #showskills {
-    font-size: 40px;
+    font-size: 25px;
     text-align: center;
     display: flex;
     order: 1;
@@ -366,17 +393,7 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 20px;
-  }
-  #skill {
-    display: flex;
-    order: 1;
-    align-content: center;
-    margin: auto;
-    align-self: flex-end;
-  }
-  .goto {
-    margin-bottom: 50px;
+    margin: 10px;
   }
 }
 #experience {
@@ -526,13 +543,21 @@ h1 {
     margin: auto;
     margin-top: 50px;
   }
+  .firstxp .secondColumn .position {
+    font-size: 15pt;
+  }
   .firstxp .secondColumn .time {
-    font-size: 15px;
+    font-size: 9pt;
     text-align: center;
     margin-bottom: 15px;
   }
-  .firstxp .secondColumn p {
+  .firstxp .secondColumn .principalline {
+    font-size: 11pt;
+  }
+  .firstxp .secondColumn ul {
     text-align: center;
+    font-size: 8.5pt;
+    list-style-position: inside;
   }
   .secondxp {
     position: sticky;
@@ -554,16 +579,21 @@ h1 {
     margin-bottom: 50px;
     margin-top: 50px;
   }
+  .secondxp .columnone .positioncero {
+    text-align: center;
+    font-size: 15pt;
+  }
   .secondxp .columnone .time {
-    font-size: 15px;
+    font-size: 9pt;
     text-align: center;
     margin-bottom: 15px;
   }
-  .secondxp .columnone p {
-    text-align: center;
+  .secondxp .columnone .principalline {
+    font-size: 11pt;
   }
-  .secondxp .columnone .positioncero {
+  .secondxp .columnone ul {
     text-align: center;
+    font-size: 8.5pt;
   }
   .secondxp .columntwo {
     grid: none;
@@ -629,22 +659,22 @@ h1 {
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
   #cont {
-    font-size: 35pt;
+    font-size: 30pt;
     align-content: center;
     justify-content: center;
     align-items: center;
   }
   .fl {
-    font-size: 15px;
+    font-size: 9.5pt;
   }
   .sl {
-    font-size: 15px;
+    font-size: 9.5pt;
   }
   .ll {
-    font-size: 15px;
+    font-size: 9.5pt;
   }
   #icon {
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
     color: white;
     margin: 20px;
@@ -653,7 +683,7 @@ h1 {
     padding-bottom: 70px;
   }
   #ret {
-    font-size: 35px;
+    font-size: 25px;
     text-align: center;
     color: white;
     margin: 20px;

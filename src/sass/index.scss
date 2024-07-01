@@ -119,17 +119,19 @@ section {
 
 
     #name {
-        font-size: 35px;
+        font-size: 30pt;
+        margin-bottom: 10px;
+
 
     }
 
     #description {
-        font-size: 15px;
+        font-size: 10pt;
 
     }
 
     #link {
-        font-size: 20px;
+        font-size: 25px;
     }
 
 
@@ -189,34 +191,38 @@ h1 {
         grid-template-columns: none;
         flex-direction: column;
         border: 1px solid black;  
+        min-height: 70vh;
 
-}
+
+    }
 
     .profile {
         margin: auto;
         margin-top: 30px;
         align-items: center;
         justify-content: center;
-        width: 25vh;
-        height: 35vh;
+        width: 30vh;
+        height: 40vh;
         border: 5px solid #d2d2d2;
         padding: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
 
     } 
 
     #me p {
         margin: auto;
-        font-size: 15px;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        font-size: 10pt;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
 
         
     }
 
     #me h1 {
         text-align: center;
+        font-size: 15pt;
+        margin-bottom: 20px;
     }
 
     #me {
@@ -229,11 +235,6 @@ h1 {
         
 
     }   
-
-
-
-
-
 
 
 
@@ -306,6 +307,7 @@ h1 {
         color: white;
         padding-top: none;
         padding-left: none;
+        font-size: 15pt;
         
         
     }
@@ -325,7 +327,7 @@ h1 {
     }
 
     #school p {
-        font-size: 15px;
+        font-size: 10pt;
         padding-bottom: 40px;
         margin: auto;
         align-items: center;
@@ -338,15 +340,16 @@ h1 {
 
     .edu1 {
 
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 70px;
+        margin-bottom: 20px;
 
     }
 
     .edu2 {
 
         width: 60px;
-        height: 70px;
+        height: 60px;
 
     }
 
@@ -466,6 +469,10 @@ h1 {
     
     }
 
+    #pro h1 {
+        font-size: 15pt;
+    }
+
     .firstpro {
 
         margin: auto;
@@ -474,15 +481,39 @@ h1 {
         align-items: center;
         justify-content: center;
         width: 350px;
-        height: 250px;
+        height: 230px;
         border: 5px solid black;
         padding: 15px;
      
 
     }
 
+    .desc {
+        font-size: 10pt;
+    }
+
+    .goto {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+
+
+    #skill {
+        display: flex;
+        order: 1;
+        align-content: center;
+        margin: auto;
+        align-self:flex-end;
+    
+    }
+
+    #skill h1 {
+        font-size: 15pt;
+        margin-bottom: 30px;
+    }
+
     #showskills {
-        font-size: 40px;
+        font-size: 25px;
         text-align: center;
         display:flex;
         order: 1;
@@ -507,28 +538,11 @@ h1 {
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                margin: 20px
+                margin: 10px;
             }
         }
 
 
-    
-        
-        }
-
-    #skill {
-        display: flex;
-        order: 1;
-        align-content: center;
-        margin: auto;
-        align-self:flex-end;
-    
-        
-    
-    }
-
-    .goto {
-        margin-bottom: 50px;
     }
 
 
@@ -747,15 +761,26 @@ h1 {
             align-content: center;
             margin: auto;
             margin-top: 50px;
+
+            .position {
+                font-size: 15pt;
+            }
     
             .time {
-                font-size: 15px;
+                font-size: 9pt;
                 text-align: center;
                 margin-bottom: 15px;
             }
+
+            .principalline {
+                font-size: 11pt;
+
+            }
     
-            p{
+            ul {
                 text-align: center;
+                font-size: 8.5pt;
+                list-style-position:inside;
     
             }
         }
@@ -781,28 +806,36 @@ h1 {
     
         .columnone {
             grid: none;
-    
             align-content: center;
             margin: auto;
             margin-bottom: 50px;
             margin-top: 50px;
-    
+
+            .positioncero {
+                text-align: center;
+                font-size: 15pt;
+            }
+
             .time {
     
-                font-size: 15px;
+                font-size: 9pt;
                 text-align: center;
                 margin-bottom: 15px;
     
             }
+
+            .principalline {
+                font-size: 11pt;
+
+            }
     
-            p {
+            ul {
                 text-align: center;
+                font-size: 8.5pt;
     
             }
 
-            .positioncero {
-                text-align: center;
-            }
+
     
         }
     
@@ -900,7 +933,7 @@ h1 {
 
     #cont {
 
-        font-size: 35pt;
+        font-size: 30pt;
         align-content: center;
         justify-content: center;
         align-items: center;
@@ -908,20 +941,21 @@ h1 {
     }
 
     .fl {
-        font-size: 15px;
+        font-size: 9.5pt;
+
     }
 
     .sl {
-        font-size: 15px;
+        font-size: 9.5pt;
     }
 
     .ll {
-        font-size: 15px;
+        font-size: 9.5pt;
     }
 
 
     #icon {
-        font-size: 35px;
+        font-size: 25px;
         text-align: center;
         color: white;
         margin: 20px;
@@ -934,7 +968,7 @@ h1 {
     }
 
     #ret {
-        font-size: 35px;
+        font-size: 25px;
         text-align: center;
         color: white;
         margin: 20px;
