@@ -469,6 +469,10 @@ h1 {
     
     }
 
+    #pro h1 {
+        font-size: 15pt;
+    }
+
     .firstpro {
 
         margin: auto;
@@ -476,12 +480,36 @@ h1 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        width: 250px;
-        height: 200px;
+        width: 350px;
+        height: 230px;
         border: 5px solid black;
         padding: 15px;
      
 
+    }
+
+    .desc {
+        font-size: 10pt;
+    }
+
+    .goto {
+        margin-bottom: 30px;
+        font-size: 25px;
+    }
+
+
+    #skill {
+        display: flex;
+        order: 1;
+        align-content: center;
+        margin: auto;
+        align-self:flex-end;
+    
+    }
+
+    #skill h1 {
+        font-size: 15pt;
+        margin-bottom: 30px;
     }
 
     #showskills {
@@ -515,23 +543,6 @@ h1 {
         }
 
 
-    
-        
-        }
-
-    #skill {
-        display: flex;
-        order: 1;
-        align-content: center;
-        margin: auto;
-        align-self:flex-end;
-    
-        
-    
-    }
-
-    .goto {
-        margin-bottom: 50px;
     }
 
 
