@@ -846,7 +846,7 @@ h1 {
 
 #cont {
 
-    font-size: 55pt;
+    font-size: 60pt;
     align-content: center;
     justify-content: center;
     align-items: center;
@@ -856,6 +856,10 @@ h1 {
 .ll {
     padding-bottom: 50px;
 
+}
+
+.fl .sl .ll {
+    font-size: 12pt;
 }
 
 
@@ -879,11 +883,10 @@ h1 {
 
 #ret {
     font-size: 40px;
-    text-align: center;
     color: white;
-    margin: 20px;
 
 }
+
 
 #ret:hover {
     color: #d2d2d2;
